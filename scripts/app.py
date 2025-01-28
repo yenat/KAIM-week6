@@ -5,8 +5,8 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the trained models
-log_reg_model = joblib.load('/home/enat/KAIM-week6/notebooks/log_reg_model.pkl')
-rf_model = joblib.load('/home/enat/KAIM-week6/notebooks/rf_model.pkl')
+log_reg_model = joblib.load('notebooks/log_reg_model.pkl')
+rf_model = joblib.load('notebooks/rf_model.pkl')
 
 # Encoding function for categorical features
 def encode_features(data):
